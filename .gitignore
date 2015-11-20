@@ -1,0 +1,8 @@
+#OS X
+.DS_Store
+
+*.pyc
+
+#Virtual Environment
+venv
+*.pem
