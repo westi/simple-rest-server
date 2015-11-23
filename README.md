@@ -23,3 +23,13 @@ After making sure you are in your virtual environment you can run the server as 
 $ source venv/bin/activate
 $ python example-server.py --listen-on-ip=127.0.0.1 --listen-on-port=9000 --ssl-key=self-signed-key.pem --ssl-cert=self-signed-cert.pem --verbose=true
 ```
+
+# Testing
+
+To test a server is running you can use curl to request the ping endpoint like so
+
+```bash
+$ curl -v -k https://localhost:9000/ping
+```
+
+Note we intentionally disable the certificate validation checks in curl for this because the cert is self signed.
