@@ -21,5 +21,5 @@ After making sure you are in your virtual environment you can run the server as 
 ```bash
 # start using the virtual environmanet
 $ source venv/bin/activate
-$ python example-server.py --listen-on-ip=127.0.0.1 --listen-on-port=9000 --ssl-key=self-signed-key.pem --ssl-cert=self-signed-cert.pem
+$ python example-server.py --listen-on-ip=127.0.0.1 --listen-on-port=9000 --ssl-key=self-signed-key.pem --ssl-cert=self-signed-cert.pem --verbose=true
 ```
