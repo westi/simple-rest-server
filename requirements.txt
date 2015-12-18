@@ -1,2 +1,2 @@
 bottle==0.12.9
-rocket==1.2.4
+Rocket==1.2.4
