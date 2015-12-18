@@ -3,7 +3,7 @@ SHELL=/bin/bash
 .PHONY: clean install run-demo nuke-old-certs
 
 # If we have a self-signed-cert and it has expired then we will nuke them so they get regenerated.
-maybe-nuke-certs != [[ -f self-signed-cert.pem ]] && openssl verify self-signed-cert.pem | grep "error 18" | sed "s/^.*$$/nuke-old-certs/"
+maybe-nuke-certs != [[ -f self-signed-cert.pem ]] && openssl verify self-signed-cert.pem | grep "error 10" | sed "s/^.*$$/nuke-old-certs/"
 
 install: srs-virtualenv self-signed-cert.pem
 
